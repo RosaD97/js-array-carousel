@@ -30,13 +30,21 @@ function(){
         item[active].classList.remove('show');
         active++;
         item[active].classList.add('show');
+    } else {
+        item[active].classList.remove('show');
+        active = 0;
+        item[active].classList.add('show');
     }
-})
+});
 down.addEventListener('click', 
 function(){
     if (active > 0){
         item[active].classList.remove('show');
         active--;
         item[active].classList.add('show');
+    } else {
+        item[active].classList.remove('show');
+        active = 4;
+        item[active].classList.add('show');
     }
-})
+});
