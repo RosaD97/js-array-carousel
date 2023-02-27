@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 /* Main */
 main{
     height: 100vh;
@@ -15,9 +16,14 @@ main{
     background-color: aqua;
     position: relative;
 }
-img{
+.ms_img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    display: none;
+}
+.show{
+    display: block;
 }
 .fa-solid{
     position: absolute;
@@ -25,6 +31,7 @@ img{
     color: #fff;
     cursor: pointer;
     font-size: 1.25rem;
+    z-index: 5;
 }
 .fa-circle-chevron-up{
  top: .9375rem;
